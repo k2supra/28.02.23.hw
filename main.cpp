@@ -63,7 +63,7 @@ int main()
 
     Point1 p1(x_1, y_1);
     p1.move(x_1_move, y_1_move);
-    p1.showCoords(); // x: 40  y: 65
+    p1.showCoords();
 
     cout << "\n\n\n";
 
@@ -79,7 +79,7 @@ int main()
 
     Point2 p2(x_2, y_2);
     p2.move(x_2_move, y_2_move);
-    p2.showCoords(); // x: 40  y: 65
+    p2.showCoords();
 
     int res_x_1, res_x_2, res_y_1, res_y_2;
     res_x_1 = x_1 + x_1_move;
