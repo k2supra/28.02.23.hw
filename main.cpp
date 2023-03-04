@@ -62,7 +62,7 @@ int main()
     cin >> y_1_move;
 
     Point1 p1(x_1, y_1);
-    p1.move(x_1_move, y_1_move);
+    p1.move(x_1_move, y_1_move); 
     p1.showCoords();
 
     cout << "\n\n\n";
