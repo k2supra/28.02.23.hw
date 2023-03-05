@@ -24,10 +24,14 @@ struct Pentagon {
         cout << endl;
     }
 
-    void print_pentagon()
+    void print_pentagon(int pos_y)
     {
         for (size_t i = 0; i < w; i++)
         {
+            for (size_t k = 0; k < pos_y; k++)
+            {
+                cout << "\t";
+            }
             for (size_t i = 0; i < h; i++)
             {
                 cout << "*" << "\t";
@@ -41,6 +45,14 @@ struct Pentagon {
 
 int main()
 {
+    cout << "Enter x position -> ";
+    int pos_x;
+    cin >> pos_x;
+    cout << "Enter y position -> ";
+    int pos_y;
+    cin >> pos_y;
+
+
     Pentagon* pentagon_1 = new Pentagon();
     int height;
     cout << "Enter height -> ";
@@ -59,9 +71,13 @@ int main()
         pentagons[i]->about();
     }
     cout << "\n>---------------------------------------------------------------------<\n\n\n";
+    for (size_t i = 0; i < pos_x; i++)
+    {
+        cout << "\n";
+    }
     for (size_t i = 0; i < size; i++)
     {
-        pentagons[i]->print_pentagon();
+        pentagons[i]->print_pentagon(pos_y);
     }
     delete[] pentagons;
     return 0;
