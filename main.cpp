@@ -91,6 +91,7 @@ int main() {
 	print_result(mult);
 	reduce(mult);
 	print_result(mult);
+	norma(mult);
 	cout << "******************" << endl;
 
 	cout << "Divide" << endl;
@@ -98,6 +99,7 @@ int main() {
 	print_result(div);
 	reduce(div);
 	print_result(div);
+	norma(div);
 	cout << "******************" << endl;
 
 	cout << "Add" << endl;
@@ -113,5 +115,6 @@ int main() {
 	print_result(subb);
 	reduce(subb);
 	print_result(subb);
+	norma(subb);
 	cout << "******************" << endl;
 }
